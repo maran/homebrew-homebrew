@@ -11,7 +11,7 @@ class Electrum < Formula
   depends_on "gettext"
 
   def install
-    opoo "Please note that Electrum needs to generate translations files in /usr/share/locale and a shortcut in /usr/share/applications, there for I chmod 777 these folders. \n Im not sure if this can do any harm, use this recipe at your own risk."
+    opoo "Please note that this is a Alpha package, if stuff breaks it's not on me!\n\n Electrum needs to generate translations files in /usr/share/locale and a shortcut in /usr/share/applications, there for I chmod 777 these folders. \n Im not sure if this can do any harm, use this recipe at your own risk."
     system("sudo chmod -R 777 /usr/share/locale/")
     unless File.directory?("/usr/share/applications")
       ohai "Creating /usr/share/applications"
