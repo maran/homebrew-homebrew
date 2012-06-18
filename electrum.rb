@@ -20,6 +20,9 @@ class Electrum < Formula
     
     system("sudo chmod -R 777 /usr/share/applications")
 
+    ohai 'Installing pip'
+    system "/usr/local/share/python/easy_install pip"
+
     ohai 'Installing ecdsa'
     system "/usr/local/share/python/pip install ecdsa"
 
