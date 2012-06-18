@@ -18,6 +18,12 @@ class Electrum < Formula
       system("sudo mkdir /usr/share/applications")
     end
     
+    unless File.directory?("/usr/share/app-install")
+      ohai "Creating /usr/share/applications"
+      system("sudo mkdir /usr/share/app-install")
+    end
+
+    system("sudo chmod -R 777 /usr/share/app-install")    
     system("sudo chmod -R 777 /usr/share/applications")
 
     ohai 'Installing pip'
