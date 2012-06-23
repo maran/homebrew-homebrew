@@ -1,7 +1,7 @@
 require 'formula'
 
 class Electrum < Formula
-  url 'http://ecdsa.org/electrum/Electrum-0.59b.tar.gz'
+  url 'http://ecdsa.org/electrum/Electrum-0.60.tar.gz'
   homepage 'http://ecdsa.org/electrum'
   md5 '4254bad432f44d61904b93917860069b'
 
@@ -44,7 +44,7 @@ class Electrum < Formula
     ohai "Installing Electrum"
     system "/usr/local/bin/python setup.py install"
         
-    ohai "Important notice\n\n Please add the '/usr/local/share/python' to your PATH, otherwise electrum might not boot for you."
+    opoo "Important notice\n\n Please add the '/usr/local/share/python' to your PATH, otherwise electrum might not boot for you."
   end
 
   def test
