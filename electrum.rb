@@ -3,7 +3,7 @@ require 'formula'
 class Electrum < Formula
   url 'http://ecdsa.org/electrum/Electrum-0.60.tar.gz'
   homepage 'http://ecdsa.org/electrum'
-  md5 '4254bad432f44d61904b93917860069b'
+  md5 'c7d7b3b85fcbd3fc08c96ca0660f41b7'
 
   depends_on "python"
   depends_on "qt"
